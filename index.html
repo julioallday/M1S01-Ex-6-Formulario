@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>[Formulário]</title>
+    
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">Formulário de inscrição
+            </h1>
+        </header>
+        <main>
+            <section class="formulario">
+                <form onsubmit="event.preventDefault()">
+                    <fieldset class="nome">
+                        <legend>Nome do estudante</legend>
+                        <div class="primeiro">
+                            <label for="nome">Primeiro nome</label>
+                            <input id="nome" type="text" placeholder="Digite o nome">
+                        </div>
+                        <div class="segundo">
+                            <label for="sobre-nome">Sobre nome</label>
+                            <input id="sobre-nome" type="text" placeholder="Digite o sobrenome">
+                        </div>
+                    </fieldset>
+                    <fieldset class="nascimento">
+                        <legend>Quando nasceu</legend>
+                        <label for="data">Data de nascimento</label>
+                        <input id="data" type="date">
+                    </fieldset>
+                    <fieldset class="genero">
+                        <legend>Genero</legend>
+                        <label for="genero">Por favor escolha</label>
+                        <select id="genero">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="N/A">N/A</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="endereco">
+                        <legend>Endereço</legend>
+                        <label for="rua">Rua</label>
+                        <input id="rua" type="text">
+
+                        <label for="cidade">Cidade</label>
+                        <input id="cidade" type="text">
+
+                        <label for="estado">Estado</label>
+                        <input id="estado" type="text">
+
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text">
+                    </fieldset>
+                    <fieldset class="email">
+                        <legend>E-mail do estudante</legend>
+                        <label for="email">Digite o e-mail</label>
+                        <input id="email" type="email" placeholder="exemplo@exemplo.com">
+                    </fieldset>
+                    <fieldset class="telefone">
+                        <legend>Numero de telefone</legend>
+                        <label for="telefone-fixo">Telefone fixo</label>
+                        <input id="telefone-fixo" placeholder="Digite o numero" type="number">
+
+                        <label for="celular">Celular</label>
+                        <input id="celular" placeholder="Digite o numero" type="number">
+
+                    </fieldset>
+                    <fieldset class="cursos">
+                        <legend>Curso</legend>
+                        <label for="cursos">Escolha um curso</label>
+                        <select id="cursos">
+                            <option value="angular">Angular</option>
+                            <option value="java">Java</option>
+                            <option value="javascript">Javascript</option>
+                            <option value="html">HTML5</option>
+                            <option value="css">CSS3</option>
+                            <option value="mysql">MySQL</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="comentarios">
+                        <legend>Comentários adicionais</legend>
+                        <label for="comentarios">Comente</label>
+                        <textarea id="comentarios" name="w3review" rows="4" cols="50"></textarea>
+                    </fieldset>
+                    <div class="button">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+            <!-- <section>
+                    <h2>Tipos de input:</h2>
+                    <label for="checkbox">checkbox</label>
+                    <input id="checkbox" type="checkbox">
+
+                    <label for="color">color</label>
+                    <input id="color" type="color">
+
+                    <label for="date">date</label>
+                    <input id="date" type="date">
+
+                    <label for="datetime-local">datetime-local</label>
+                    <input id="datetime-local" type="datetime-local">
+
+                    <label for="email">email</label>
+                    <input id="email" type="email">
+
+                    <label for="file">file</label>
+                    <input id="file" type="file">
+
+                    <label for="hidden">hidden</label>
+                    <input id="hidden" type="hidden">
+
+                    <label for="image">image</label>
+                    <input id="image" type="image">
+
+                    <label for="month">month</label>
+                    <input id="month" type="month">
+
+                    <label for="">number</label>
+                    <input id="number" type="number">
+
+                    <label for="">password</label>
+                    <input id="password" type="password">
+
+                    <label for="">radio</label>
+                    <input id="radio" type="radio">
+
+                    <label for="">range</label>
+                    <input id="range" type="range">
+
+                    <label for="">reset</label>
+                    <input id="reset" type="reset">
+
+                    <label for="">search</label>
+                    <input id="search" type="search">
+
+                    <label for="">submit</label>
+                    <input id="submit" type="submit">
+
+                    <label for="">tel</label>
+                    <input id="tel" type="tel">
+
+                    <label for="">text</label>
+                    <input id="text" type="text">
+
+                    <label for="">time</label>
+                    <input id="time" type="time">
+
+                    <label for="">url</label>
+                    <input id="url" type="url">
+
+                    <label for="">week</label>
+                    <input id="week" type="week">
+
+                    <label for="button">Button</label>
+                    <input id="button" type="button">
+                </section> -->
+        </main>
+    </body>
+</html>
