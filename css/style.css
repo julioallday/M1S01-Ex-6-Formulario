@@ -9,45 +9,76 @@
   --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-}
 @media only screen and (max-width: 600px) {
-  body{
+  body {
     font-size: 20px;
   }
-    h1 {
+  h1 {
     font-size: 40px;
   }
-  .button{
-    width:0px;
+  .button {
+    width: 0px;
   }
   .formulario fieldset {
     width: 298px;
     margin: 0;
     padding: 2px;
   }
+  .formulario fieldset input{
+    height: 30px;
+    font-size: 24px;
   }
- 
-  textarea {
-    width: 96%;
-    resize: none;
+  fieldset legend{
+    font-size: 26px;
+    
+  }
+  fieldset select {
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  body {
+    font-size: 30px;
+  }
+  .formulario fieldset {
+    padding: 50px;
+    width: 70%;
+  }
+  .formulario legend {
+    font-size: 50px;
+  }
+  fieldset select {
+    width: 90%;
+    height: 60px;
   }
   main section {
-    width: 80vw;
-    margin: 0;
-    padding: 0;
-  }
-  fieldset select{
-    width: 280px;
+    width: 60%;
   }
   .formulario fieldset input{
-    width: 260px;
-    margin: 0 auto;
+    height: 50px;
+    font-size: 24px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  width: 96%;
+  resize: none;
+}
+main section {
+  width: 80vw;
+  margin: 0;
+  padding: 0;
+}
 
+.formulario fieldset input {
+  width: 260px;
+  margin: 0 auto;
+}
 
 body {
   max-width: 100vw;
@@ -87,28 +118,11 @@ main section {
   border-radius: var(--border-radius);
   background-color: var(--card-color);
   gap: 30px;
-}
-
-@media only screen and (min-width: 600px) {
-  body{
-    font-size: 30px;
-  }
-    .formulario fieldset {
-    padding: 50px;
-    width: 70%;
-  } 
-   fieldset select{
-    width: 90%;
-  }
-  main section {
-    width: 60%;
-  }
-
+  border: solid var(--border-color);
+  border-width: 5px 0 5px 0;
 }
 
 .formulario fieldset input {
-  height: 50px;
-  font-size: 24px;
   width: 90%;
   border-radius: 10px;
   padding: 5px;
@@ -117,7 +131,7 @@ main section {
 
 .formulario legend {
   color: var(--font-color);
-  font-size: 28px;
+
   font-weight: 700;
   font-family: var(--font-family);
   letter-spacing: 2px;
@@ -200,6 +214,7 @@ main section {
   border: solid var(--border-color);
   border-width: 5px 0 0 0;
 }
+
 .nome .primeiro {
   display: flex;
   flex-direction: column;
@@ -213,9 +228,10 @@ textarea {
   font-size: 24px;
 }
 fieldset select {
-  height: 70px;
-  font-size: 24px;
+
   border-radius: 8px;
   margin: 0 auto;
-
+}
+fieldset legend{
+  text-align: center;
 }
