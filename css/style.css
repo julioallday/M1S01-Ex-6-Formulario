@@ -100,7 +100,6 @@ h1 {
   color: var(--header-font-color);
   text-align: center;
 }
-
 main section {
   height: fit-content;
   display: flex;
@@ -110,7 +109,6 @@ main section {
   margin: 0 auto;
   padding: 20px;
 }
-
 .formulario fieldset {
   display: flex;
   flex-direction: column;
@@ -121,14 +119,12 @@ main section {
   border: solid var(--border-color);
   border-width: 5px 0 5px 0;
 }
-
 .formulario fieldset input {
   width: 90%;
   border-radius: 10px;
   padding: 5px;
   margin-bottom: 10px;
 }
-
 .formulario legend {
   color: var(--font-color);
 
@@ -214,7 +210,6 @@ main section {
   border: solid var(--border-color);
   border-width: 5px 0 0 0;
 }
-
 .nome .primeiro {
   display: flex;
   flex-direction: column;

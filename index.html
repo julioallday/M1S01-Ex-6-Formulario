@@ -6,8 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/modal.css">
         <title>[Formulário]</title>
     </head>
+
     <body>
         <header>
             <h1 class="titulo">Formulário de inscrição
@@ -15,7 +17,7 @@
         </header>
         <main>
             <section class="formulario">
-                <form onsubmit="event.preventDefault()">
+                <form id="formulario" onsubmit="event.preventDefault(); ">
                     <fieldset class="nome">
                         <legend>Nome do estudante</legend>
                         <div class="primeiro">
@@ -29,8 +31,10 @@
                     </fieldset>
                     <fieldset class="nascimento">
                         <legend>Data de nascimento</legend>
-                        <label for="data">Quando nasceu:</label>
+
+                        <label id="date-title" for="data">Quando nasceu:</label>
                         <input id="data" type="date">
+                        
                     </fieldset>
                     <fieldset class="genero">
                         <legend>Gênero</legend>
@@ -43,6 +47,7 @@
                     </fieldset>
                     <fieldset class="endereco">
                         <legend>Endereço</legend>
+
                         <label for="rua">Rua:</label>
                         <input id="rua" type="text">
 
@@ -79,13 +84,37 @@
                             <option value="mysql">MySQL</option>
                         </select>
                     </fieldset>
+                    <fieldset id="cores">
+                        <legend>Cores</legend>
+                        <label for="color">Escolha o tema:</label>
+                        <input id="color" type="color">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Alcançe</legend>
+                        <input type="range" id="range" value="90">
+                        <p id="valor"></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Documentos</legend>
+                        <label id="file-name" for="file">file</label>
+                        <input id="file" type="file">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Outros</legend>
+                        <input type="checkbox" id="disposicao" name="disposicao" value="sim">
+                        <label for="disposicao">Disposição para estudar 15 horas</label><br>
+                        <input type="checkbox" id="eventos" name="eventos" value="sim">
+                        <label for="eventos">Disponibilidade para comparecer a eventos</label><br>
+                        <input type="checkbox" id="livros" name="livros" value="sim">
+                        <label for="livros">Interesse em livros</label><br><br>
+                    </fieldset>
                     <fieldset class="comentarios">
                         <legend>Comentários adicionais</legend>
                         <label for="comentarios">Comente:</label>
                         <textarea id="comentarios" name="textarea" rows="4" cols="50"></textarea>
                     </fieldset>
                     <div class="button">
-                        <button class="enviar" type="submit">Enviar</button>
+                        <button id="myBtn" class="enviar" type="submit">Enviar</button>
                         <a class="cancelar" type="submit">Cancelar</a>
                     </div>
                 </form>
@@ -158,6 +187,19 @@
                     <label for="button">Button</label>
                     <input id="button" type="button">
                 </section> -->
+            <!-- modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modal-text">Formulário enviado com sucesso!!! 🚀🚀🚀</p>
+                </div>
+            </div>
         </main>
+        <script src="./js/color.js"></script>
+        <script src="./js/arquivo.js"></script>
+        <script src="./js/date.js"></script>
+        <script src="./js/range.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
+
 </html>
